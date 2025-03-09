@@ -16,7 +16,7 @@ pipeline {
               script {
                   // Run the Cypress tests and generate reports
                   sh 'npx cypress run --headless || exit 0'
-		  sh 'ls -lrt cypress/reports/html/'
+		 # sh 'ls -lrt cypress/reports/html/'
               }
           }
       }
