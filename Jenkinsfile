@@ -16,7 +16,7 @@ pipeline {
               script {
                   // Run the Cypress tests and generate reports
                   sh 'npx cypress run --headless || exit 0'
-		 
+		  sh 'ls -lrt cypress/reports/html/'
               }
           }
       }
@@ -28,7 +28,7 @@ pipeline {
                   emailext (
                       subject: "Cypress Test Results",
                       body: "Please find the attached test report.",
-                      to: "mpawar@radinhealth.com,rkumari@radinhealth.com,prakash@radinhealth.com,d.lohar@radinhealth.com",
+                      to: "mpawar@radinhealth.com,rkumari@radinhealth.com,
                       attachmentsPattern: 'cypress/reports/html/index.html'
                   )
               }
