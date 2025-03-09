@@ -28,7 +28,7 @@ pipeline {
                   emailext (
                       subject: "Cypress Test Results",
                       body: "Please find the attached test report.",
-                      to: "mpawar@radinhealth.com,rkumari@radinhealth.com,
+                      to: "mpawar@radinhealth.com,rkumari@radinhealth.com",
                       attachmentsPattern: 'cypress/reports/html/index.html'
                   )
               }
