@@ -1,0 +1,19 @@
+{
+  "name": "seppitechnology",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.3",
+    "pdfmake": "^0.3.0-beta.3"
+  },
+  "devDependencies": {
+    "cypress": "^13.7.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}
